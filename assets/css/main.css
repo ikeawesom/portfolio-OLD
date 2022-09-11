@@ -2297,7 +2297,6 @@ input, select, textarea {
 		}
 
 /* Icons */
-
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -3583,6 +3582,18 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 	}
+		#banner .icons {
+			font-size: 1.25em;
+		}
+
+			#banner .icons a {
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+				#banner .icons a:hover {
+					color: #fff;		
+					transform: scale(2,2);		
+				}
 
 		#banner h2 {
 			-moz-transform: scale(1);
@@ -3889,18 +3900,6 @@ input, select, textarea {
 		background-color: #1d242a;
 		text-align: center;
 	}
-
-		#footer .icons {
-			font-size: 1.25em;
-		}
-
-			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
-			}
-
-				#footer .icons a:hover {
-					color: #fff;
-				}
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
