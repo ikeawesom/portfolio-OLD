@@ -3446,10 +3446,10 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		-moz-transition: background-color 0.2s ease;
-		-webkit-transition: background-color 0.2s ease;
-		-ms-transition: background-color 0.2s ease;
-		transition: background-color 0.2s ease;
+		-moz-transition: background-color 0.8s ease;
+		-webkit-transition: background-color 0.8s ease;
+		-ms-transition: background-color 0.8s ease;
+		transition: background-color 0.8s ease;
 		background: #000000;
 		height: 3em;
 		left: 0;
