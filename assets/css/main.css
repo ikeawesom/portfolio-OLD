@@ -3328,7 +3328,7 @@ input, select, textarea {
 	}
 
 		#page-wrapper:before {
-			background: rgba(0, 0, 0, 0);
+			background: rgba(255, 0, 0, 0);
 			content: '';
 			display: block;
 			display: none;
@@ -3450,7 +3450,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: #000000;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
