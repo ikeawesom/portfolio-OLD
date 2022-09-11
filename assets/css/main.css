@@ -3375,7 +3375,7 @@ input, select, textarea {
 				padding: 0.5em 0 0 0;
 			}
 			#menu ul > li:hover {
-				color:rgb(255, 78, 78);
+				color:rgb(174, 174, 174);
 			}
 
 				#menu ul > li:first-child {
@@ -3523,11 +3523,7 @@ input, select, textarea {
 							outline: 0;
 							position: relative;
 						}
-						#header nav > ul > li > a.menuToggle:hover {
-							color:rgb(255, 78, 78)						
-						}
-				
-
+					
 							#header nav > ul > li > a.menuToggle:after {
 								background-image: url("images/bars.svg");
 								background-position: right center;
@@ -3604,8 +3600,7 @@ input, select, textarea {
 			}
 
 				#banner .icons a:hover {
-					color:rgb(255, 78, 78);		
-					transform: scale(2,2);		
+					color: #fff;
 				}
 
 		#banner h2 {
@@ -3692,13 +3687,7 @@ input, select, textarea {
 			text-transform: uppercase;
 			width: 16em;
 			z-index: 1;
-			transition: 0.2s;
 		}
-
-		#banner .more:hover {
-			color:rgb(255, 78, 78);
-		}
-
 			#banner .more:after {
 				background-image: url("images/arrow.svg");
 				background-position: center;
