@@ -3350,8 +3350,8 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
-		color: #ffffff;
+		background: #efefef;
+		color: #161616;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -3369,9 +3369,13 @@ input, select, textarea {
 		}
 
 			#menu ul > li {
+				font-size:23px;
 				border-top: solid 1px rgba(0, 0, 0, 0.125);
 				margin: 0.5em 0 0 0;
 				padding: 0.5em 0 0 0;
+			}
+			#menu ul > li:hover {
+				color:rgb(255, 78, 78);
 			}
 
 				#menu ul > li:first-child {
@@ -3400,7 +3404,7 @@ input, select, textarea {
 					}
 
 		#menu .close {
-			background-image: url("images/close.svg");
+			background-image: url("images/close.png");
 			background-position: 4.85em 1em;
 			background-repeat: no-repeat;
 			border: 0;
@@ -3410,8 +3414,11 @@ input, select, textarea {
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
+			transition: 0.2s;
+		}
+		#menu .close:hover {
+			background-image: url("images/close_hover.png");
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3509,12 +3516,17 @@ input, select, textarea {
 						letter-spacing: 0.225em;
 						padding: 0 1.5em;
 						text-transform: uppercase;
+						transition: 0.2s;
 					}
 
 						#header nav > ul > li > a.menuToggle {
 							outline: 0;
 							position: relative;
 						}
+						#header nav > ul > li > a.menuToggle:hover {
+							color:rgb(255, 78, 78)						
+						}
+				
 
 							#header nav > ul > li > a.menuToggle:after {
 								background-image: url("images/bars.svg");
@@ -3526,7 +3538,7 @@ input, select, textarea {
 								vertical-align: top;
 								width: 2em;
 							}
-
+						
 							@media screen and (max-width: 736px) {
 
 								#header nav > ul > li > a.menuToggle {
@@ -3588,10 +3600,11 @@ input, select, textarea {
 
 			#banner .icons a {
 				color: rgba(255, 255, 255, 0.5);
+				transition: 0.4s;
 			}
 
 				#banner .icons a:hover {
-					color: #fff;		
+					color:rgb(255, 78, 78);		
 					transform: scale(2,2);		
 				}
 
@@ -3653,10 +3666,12 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
 			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
 			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 3.5s;
-			-webkit-transition-delay: 3.5s;
-			-ms-transition-delay: 3.5s;
-			transition-delay: 3.5s;
+			/* for see more arrow */
+			-moz-transition-delay: 2.5s;
+			-webkit-transition-delay: 2.5s;
+			-ms-transition-delay: 2.5s;
+			transition-delay: 2.5s;
+			/**/
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3677,6 +3692,11 @@ input, select, textarea {
 			text-transform: uppercase;
 			width: 16em;
 			z-index: 1;
+			transition: 0.2s;
+		}
+
+		#banner .more:hover {
+			color:rgb(255, 78, 78);
 		}
 
 			#banner .more:after {
@@ -3693,17 +3713,22 @@ input, select, textarea {
 				position: absolute;
 				width: 1.5em;
 			}
+			#banner .more:after:hover {
+				transform: scale(1.5,1.5);
+			}
 
 		#banner:after {
 			pointer-events: none;
-			-moz-transition: opacity 3s ease-in-out;
-			-webkit-transition: opacity 3s ease-in-out;
-			-ms-transition: opacity 3s ease-in-out;
-			transition: opacity 3s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			/* for banner img */
 			-moz-transition-delay: 1.25s;
 			-webkit-transition-delay: 1.25s;
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
+			/**/
 			content: '';
 			background: #2e3842;
 			display: block;
