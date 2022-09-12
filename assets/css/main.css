@@ -2690,6 +2690,19 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 	}
+	.mainproj {
+		animation: glow 1s ease-in-out infinite alternate;
+	}
+	.mainproj .pinned {
+		position:absolute;
+		right: 3%;
+		color:rgb(15, 255, 175)
+	}
+	.pinned:after{
+		content:"  Pinned Project";
+		font-weight: bold;
+		font-size: 20px;
+	}
 
 		.spotlight .image {
 			-moz-order: 1;
@@ -2697,7 +2710,7 @@ input, select, textarea {
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
-			width: 40%;
+			width: 42%;
 		}
 
 			.spotlight .image img {
@@ -4037,16 +4050,13 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
-.glow {
-	animation: glow 1s ease-in-out infinite alternate;
-}
 	
 @-webkit-keyframes glow {
 from {
-	box-shadow: 5px 5px 10px 2px #fff
+	box-shadow: 0 0 10px 5px #fff
 }
 
 to {
-	box-shadow: 5px 5px 10px 2px #860043;
+	box-shadow: 0 0 10px 5px rgb(15, 255, 175);
 }
 }
