@@ -159,7 +159,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 30px 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1760,8 +1760,8 @@ input, select, textarea {
 
 	header p {
 		color: rgba(255, 255, 255, 0.5);
-		position: relative;
-		top: -0.25em;
+		/* position: relative; */
+		/* top: -0.25em; */
 	}
 
 	header h3 + p {
@@ -1777,12 +1777,12 @@ input, select, textarea {
 	header.major {
 		margin: 0 0 3.5em 0;
 	}
-
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
 			border-bottom: solid 2px #fff;
 			display: inline-block;
 			padding-bottom: 1em;
 			position: relative;
+			font-size: 28px;
 		}
 
 			header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
@@ -1796,6 +1796,12 @@ input, select, textarea {
 			top: 0;
 		}
 
+		header.major .years {
+			font-weight:bold;
+			font-size: 20pt;
+			text-align: left;
+			padding-left: 1em;
+		}
 		@media screen and (max-width: 736px) {
 
 			header.major {
@@ -2551,14 +2557,28 @@ input, select, textarea {
 		list-style: none;
 		padding: 0;
 		width: 100%;
-	}
-
+	}	
+		
 		.features li {
-			padding: 4em 4em 2em 6em ;
+			padding: 2em 2em 1em 6em ;
 			display: block;
 			position: relative;
 			text-align: left;
 			width: 50%;
+		}
+		.features .lastli {
+			width: 100%;
+		}
+		
+		.features li .sub {
+			padding-bottom:20px;
+			border-bottom: solid 1px;
+			width: 92%;
+		}
+		
+		.features li h3 {
+			border-bottom: none; padding: 0;
+
 		}
 
 			.features li:nth-child(1) {
@@ -2600,13 +2620,14 @@ input, select, textarea {
 			.features li:nth-child(10) {
 				background-color: rgba(0, 0, 0, 0.35);
 			}
+			
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #c60042;
 				position: absolute;
 				left: 1.75em;
-				top: 2.75em;
+				top: 1.8em;
 				font-size: 1.5em;
 			}
 
@@ -3866,7 +3887,6 @@ input, select, textarea {
 		#main > header p {
 			color: inherit;
 			letter-spacing: 0.225em;
-			/* text-transform: uppercase; */
 			top: 0;
 		}
 
@@ -4017,3 +4037,16 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+.glow {
+	animation: glow 1s ease-in-out infinite alternate;
+}
+	
+@-webkit-keyframes glow {
+from {
+	box-shadow: 5px 5px 10px 2px #fff
+}
+
+to {
+	box-shadow: 5px 5px 10px 2px #860043;
+}
+}
