@@ -3849,6 +3849,15 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	#mainpass > header {
+		padding: 12em 0 9.9em 0 ;
+		background-image: url("../../images/passSafe/fgraphic.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		text-align: center;
+	}
+
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
@@ -3857,7 +3866,7 @@ input, select, textarea {
 		#main > header p {
 			color: inherit;
 			letter-spacing: 0.225em;
-			text-transform: uppercase;
+			/* text-transform: uppercase; */
 			top: 0;
 		}
 
@@ -3972,7 +3981,6 @@ input, select, textarea {
 			}
 
 		}
-
 /* Landing */
 
 	body.landing #page-wrapper {
