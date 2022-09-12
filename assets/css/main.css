@@ -2318,6 +2318,11 @@ input, select, textarea {
 
 			ul.icons.major li {
 				padding-right: 3.5em;
+				transition: 0.2s;
+			}
+
+			ul.icons.major li:hover{
+				transform: scale(1.08,1.08);
 			}
 
 				@media screen and (max-width: 736px) {
@@ -2550,6 +2555,7 @@ input, select, textarea {
 		justify-content: center;
 		list-style: none;
 		padding: 0;
+		opacity: 1.0;
 		width: 100%;
 	}	
 		
@@ -2559,6 +2565,11 @@ input, select, textarea {
 			position: relative;
 			text-align: left;
 			width: 50%;
+			opacity: 100%;
+			transition: 0.2s;
+		}
+		.features li:hover{
+			box-shadow: 0 0 10px 10px rgb(255, 163, 171);
 		}
 		.features .lastli {
 			width: 100%;
@@ -2572,7 +2583,6 @@ input, select, textarea {
 		
 		.features li h3 {
 			border-bottom: none; padding: 0;
-
 		}
 
 			.features li:nth-child(1) {
@@ -2674,16 +2684,16 @@ input, select, textarea {
 
 /* Spotlight */
 
-	.spotlight {
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-	}
+.spotlight {
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
 	.mainproj {
 		animation: glow 1s ease-in-out infinite alternate;
 	}
@@ -2698,36 +2708,36 @@ input, select, textarea {
 		font-size: 20px;
 	}
 
-		.spotlight .image {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
+	.spotlight .image {
+		-moz-order: 1;
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+		border-radius: 0;
+		width: 40%;
+	}
+
+		.spotlight .image img {
 			border-radius: 0;
-			width: 42%;
+			width: 100%;
 		}
 
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
+	.spotlight .content {
+		padding: 2em 4em 0.1em 4em ;
+		-moz-order: 2;
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+		max-width: 48em;
+		width: 60%;
+	}
 
-		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			max-width: 48em;
-			width: 60%;
-		}
-
-		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
-		}
+	.spotlight:nth-child(2n) {
+		-moz-flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
 
 		.spotlight:nth-child(1) {
 			background-color: rgba(0, 0, 0, 0.075);
