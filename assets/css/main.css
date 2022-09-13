@@ -2703,9 +2703,8 @@ input, select, textarea {
 		animation: glow_green 1s ease-in-out infinite alternate;
 	}
 	.mainproj .pinned {
-		/* position: relative; */
 		color:rgb(15, 255, 175);
-		float:right;
+		margin-bottom: 5%;
 	}
 	.pinned:after{
 		content:"  Pinned Project";
@@ -2729,7 +2728,7 @@ input, select, textarea {
 
 	.spotlight .content {
 		text-align: justify;
-		padding: 2em 2em 0.1em 4em ;
+		padding: 2em 3.5em 0.1em 4em ;
 		-moz-order: 2;
 		-webkit-order: 2;
 		-ms-order: 2;
