@@ -2053,7 +2053,7 @@ input, select, textarea {
 			border-radius: 3px;
 			border: solid 2px #fff;
 			display: inline-block;
-			font-size: 1.6em;
+			font-size: 1.55em;
 			height: calc(3em + 2px);
 			line-height: 3em;
 			text-align: center;
@@ -2314,7 +2314,7 @@ input, select, textarea {
 			}
 
 		ul.icons.major {
-			padding: 1em 0;
+			padding: 1e 0;
 		}	
 			ul li {
 				align-items: center;
@@ -2323,13 +2323,7 @@ input, select, textarea {
 
 			ul.icons.major li {
 				padding-right: 4em;
-				transition: 0.2s;
 			}
-
-			ul.icons.major li:hover{
-				transform: scale(1.08,1.08);
-			}
-
 				@media screen and (max-width: 736px) {
 
 					ul.icons.major li {
@@ -4081,11 +4075,8 @@ to {
 	}
 
 .icon_grid {
-	display: grid;
-	height: 100%;
+	margin-top: 5px;
 	width:100%;
-	display: inline-flex;
-	padding-bottom: 1em;
 }
 
 .icon_grid .tooltip {
@@ -4100,11 +4091,11 @@ to {
 	opacity: 0;
 	transition: 0.2s;
 	cursor: default;
+	margin-bottom: 20px;
 
 }
 
 .icon_grid .icons{
-	margin-right: 8%;
 	text-align: center;
 }
 
