@@ -2053,7 +2053,7 @@ input, select, textarea {
 			border-radius: 3px;
 			border: solid 2px #fff;
 			display: inline-block;
-			font-size: 1.35em;
+			font-size: 1.6em;
 			height: calc(3em + 2px);
 			line-height: 3em;
 			text-align: center;
@@ -2306,6 +2306,7 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 1em 0 0;
+			
 		}
 
 			ul.icons li:last-child {
@@ -2314,10 +2315,14 @@ input, select, textarea {
 
 		ul.icons.major {
 			padding: 1em 0;
-		}
+		}	
+			ul li {
+				align-items: center;
+				text-align: center;
+			}
 
 			ul.icons.major li {
-				padding-right: 3.5em;
+				padding-right: 4em;
 				transition: 0.2s;
 			}
 
@@ -2695,12 +2700,12 @@ input, select, textarea {
 	display: flex;
 }
 	.mainproj {
-		animation: glow 1s ease-in-out infinite alternate;
+		animation: glow_green 1s ease-in-out infinite alternate;
 	}
 	.mainproj .pinned {
-		position:absolute;
-		right: 3%;
-		color:rgb(15, 255, 175)
+		/* position: relative; */
+		color:rgb(15, 255, 175);
+		float:right;
 	}
 	.pinned:after{
 		content:"  Pinned Project";
@@ -2723,13 +2728,14 @@ input, select, textarea {
 		}
 
 	.spotlight .content {
-		padding: 2em 4em 0.1em 4em ;
+		text-align: justify;
+		padding: 2em 2em 0.1em 4em ;
 		-moz-order: 2;
 		-webkit-order: 2;
 		-ms-order: 2;
 		order: 2;
 		max-width: 48em;
-		width: 60%;
+		width: 50%;
 	}
 
 	.spotlight:nth-child(2n) {
@@ -3407,11 +3413,13 @@ input, select, textarea {
 		}
 
 			#menu ul > li {
+				text-align: left;
 				font-size:23px;
 				border-top: solid 1px rgba(0, 0, 0, 0.125);
 				margin: 0.5em 0 0 0;
 				padding: 0.5em 0 0 0;
 			}
+
 			#menu ul > li:hover {
 				color:rgb(174, 174, 174);
 			}
@@ -4054,7 +4062,7 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 	
-@-webkit-keyframes glow {
+@-webkit-keyframes glow_green {
 from {
 	box-shadow: 0 0 10px 5px #fff
 }
@@ -4062,4 +4070,71 @@ from {
 to {
 	box-shadow: 0 0 10px 5px rgb(15, 255, 175);
 }
+}
+@-webkit-keyframes glow_red {
+	from {
+		box-shadow: 0 0 10px 5px #fff
+	}
+	
+	to {
+		box-shadow: 0 0 10px 5px rgb(255, 52, 130);
+	}
+	}
+
+.icon_grid {
+	display: grid;
+	height: 100%;
+	width:100%;
+	display: inline-flex;
+	padding-bottom: 1em;
+}
+
+.icon_grid .tooltip {
+	margin-top: 30px;
+	text-align: center;
+	background:rgb(255, 255, 255);
+	color:rgb(0, 0, 0);
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 25px;
+	opacity: 0;
+	transition: 0.2s;
+	cursor: default;
+
+}
+
+.icon_grid .icons{
+	margin-right: 8%;
+	text-align: center;
+}
+
+.icon_grid span:hover + .tooltip {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.icon_grid span {
+	transition: 0.2s;
+}
+.icon_grid span:hover {
+	background-color:rgb(234, 234, 234);
+	color:rgb(42, 42, 42);
+}
+
+.download {
+	margin-right: 10px;
+	border-bottom: 0;
+}
+
+.dbutton, .d1button {
+	border-radius: 10px;
+}
+
+.download .dbutton:hover {
+	animation: glow_green 0.5s ease-in-out infinite alternate;
+}
+
+.download .d1button:hover {
+	animation: glow_red 0.5s ease-in-out infinite alternate;
 }
