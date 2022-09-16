@@ -2826,7 +2826,10 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 3.5em 0 3em 0 ;
+	}
+	.projheads {
+		padding: 2.5em 0 1em 0;
 	}
 
 		.wrapper > .inner {
@@ -4076,6 +4079,15 @@ to {
 	}
 	}
 
+
+#projects .tools {
+	border-bottom: 2px solid white;
+	display: inline-block;
+	padding-bottom: 1%;
+	margin-bottom: 5%;
+	position: relative;
+	font-size: 20px;
+}
 .icon_grid {
 	margin-top: 5px;
 	width:100%;
@@ -4101,6 +4113,14 @@ to {
 	text-align: center;
 }
 
+.icon_grid li img {
+	position:absolute;
+	width:45px;
+	transform: rotate(45deg);
+	right:20%;
+	top:19%;	
+}
+
 .icon_grid span:hover + .tooltip {
 	opacity: 1;
 	pointer-events: auto;
@@ -4109,16 +4129,22 @@ to {
 .icon_grid span {
 	transition: 0.2s;
 }
+
 .icon_grid span:hover {
 	background-color:rgb(234, 234, 234);
 	color:rgb(42, 42, 42);
 }
 
-.download {
-	margin-right: 10px;
-	border-bottom: 0;
+.pp, .ps {
+	transition: 0.4s;
+}
+.icon_grid span:hover > .pp{
+	content: url('../../images/pp1.png')
 }
 
+.icon_grid span:hover > .ps {
+	content: url('../../images/ps1.png')
+}
 .dbutton, .d1button {
 	border-radius: 10px;
 }
