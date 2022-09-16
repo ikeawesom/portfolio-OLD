@@ -4112,7 +4112,7 @@ to {
 
 .icon_grid li img {
 	position:absolute;
-	width:45px;
+	width:60%;
 	transform: rotate(45deg);
 	right:20%;
 	top:19%;	
