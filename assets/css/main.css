@@ -2305,8 +2305,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 1em 0 0;
-			
+			padding: 0;
 		}
 
 			ul.icons li:last-child {
@@ -3181,6 +3180,10 @@ input, select, textarea {
 
 		.wrapper.style4 {
 			background-color: transparent;
+		}
+
+		.wrapper.style6 {
+			background-color: #10185b;
 		}
 
 		.wrapper.style5 {
@@ -4090,25 +4093,21 @@ to {
 }
 .icon_grid {
 	margin-top: 5px;
+	align-items: center;
 	width:100%;
 }
 
 .icon_grid .tooltip {
+	position: inherit;
 	margin-top: 30px;
-	text-align: center;
 	background:rgb(255, 255, 255);
 	color:rgb(0, 0, 0);
-	align-items: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 25px;
 	opacity: 0;
 	cursor: default;
 	margin-bottom: 20px;
-}
-
-.icon_grid .icons{
-	text-align: center;
 }
 
 .icon_grid li img {
