@@ -4103,10 +4103,8 @@ to {
 	padding-right: 10px;
 	border-radius: 25px;
 	opacity: 0;
-	transition: 0.2s;
 	cursor: default;
 	margin-bottom: 20px;
-
 }
 
 .icon_grid .icons{
@@ -4126,18 +4124,11 @@ to {
 	pointer-events: auto;
 }
 
-.icon_grid span {
-	transition: 0.2s;
-}
-
 .icon_grid span:hover {
 	background-color:rgb(234, 234, 234);
 	color:rgb(42, 42, 42);
 }
 
-.pp, .ps {
-	transition: 0.4s;
-}
 .icon_grid span:hover > .pp{
 	content: url('../../images/pp1.png')
 }
@@ -4145,6 +4136,15 @@ to {
 .icon_grid span:hover > .ps {
 	content: url('../../images/ps1.png')
 }
+
+.icon_grid span:hover > .cam {
+	content: url('../../images/camtasia1.png')
+}
+
+.icon_grid span:hover > .aud {
+	content: url('../../images/audacity1.png')
+}
+
 .dbutton, .d1button {
 	border-radius: 10px;
 }
