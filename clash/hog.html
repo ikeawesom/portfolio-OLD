@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Hog Statistics </title>
+        <link rel="stylesheet" href="styles_hog.css">
+        <script src="scripts/hog.js"></script>
+    </head>
+    <body>
+        <div id="bg"> <div id="gradient"> <div id="gradient1">
+            <img src="images/sound off.png" id="off">
+            <img src="images/sound on.png" id="on">
+            <img src="images/right arrow.png" id="right_arrow">
+            <img src="images/left arrow.png" id="left_arrow">
+            <div id='scroll_bar'>
+                <div id="dot1"></div>
+                <div id="dot2"></div>
+                <div id="dot3"></div>
+                <div id="dot4"></div>
+            </div>
+            <div id="page1">
+                <img src="images/hog/hog icon.png" id="profile">
+                <h1 id="name"> hog rider </h1>
+                <table id="stats1">
+                    <th> Rarity </th>
+                    <th> Type </th>
+                    <tr>
+                        <td> Rare </td>
+                        <td> Troop </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="page2">
+                <div id="page2bg">
+                    <div id="levelslider">
+                        <input id="levelrange" type="range" value="3" min="3" max="14" onChange="rangeSlide1(this.value)" onmousemove="rangeSlide1(this.value)"></input>
+                        <p> Level <span id='lvl'> 3</span></p>
+                    </div>
+                    <div id="pg2bottom">
+                        <table id="stats2left">
+                            <th id="dmg"><img src='images/stat icons/dmgicon.png'>Damage </th>
+                            <th id="dmgtime"><img src='images/stat icons/dmgicontime.png'> Damage per Second</th>
+                            <tr>
+                                <td id="dmg1"> 150 </td>
+                                <td id="dmgtime1"> 93 </td>
+                            </tr>
+                            <th id="hp"> <img src='images/stat icons/hp.png'> Hitpoints </th>
+                            <th id="hitspeed"> <img src="images/stat icons/attackspd.png"> Hit Speed </th>
+                            <tr>
+                                <td id="hp1"> 800 </td>
+                                <td> 1.6sec </td>
+                            </tr>
+                            <th id='targs'> <img src='images/stat icons/targs.png'> Targets </th>
+                            <th id='speed'> <img src='images/stat icons/speed.png'> Speed </th>
+                            <tr>
+                                <td> Buildings </td>
+                                <td> Very Fast </td>
+                            </tr>
+                        </table>
+                        <div id="page2right">
+                            <table id="stats2right">
+                                <th id="range"> <img src="images/stat icons/range.png"> Range </th>
+                                <tr>
+                                    <td> Melee: Short </td>
+                                </tr>
+                            </table>
+                            <div id="details">
+                                Fast melee troop that targets buildings and can jump over the river. He followed the echoing call of "HOG RIDERRRR" all the way through the Arena doors.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page3">
+                <div class="page3bg">
+                    <div id="emotetitle"> Emotes </div>
+                    <ul id="emoteslst">
+                        <li> <img src='images/emotes/scream pic.png' id="scream"> </li>
+                        <li> <img src='images/emotes/hmm pic.png' id="hmm"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page4">
+                <div class="page3bg">
+                    <div id="cringeslider">
+                        <input id="cringerange" type="range" value="1" min="1" max="3" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+                        <p> Cringe Level: <span id="cringe"> LOW </span> </p>
+                    </div>
+                    <ol id='decklist'>
+                        <li> <img src='images/decks/hog cycle.png' id='cycle'></li>
+                        <li> <img src='images/decks/hog eq.png' id='eq'></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/hog.js"></script>
+    </body>
+</html>
