@@ -2305,7 +2305,6 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0;
 		}
 
 			ul.icons li:last-child {
@@ -2321,7 +2320,7 @@ input, select, textarea {
 			}
 
 			ul.icons.major li {
-				padding-right: 4em;
+				padding-right: 3em;
 			}
 				@media screen and (max-width: 736px) {
 
