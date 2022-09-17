@@ -4143,6 +4143,9 @@ to {
 	content: url('../../images/audacity1.png')
 }
 
+.download {
+	border-bottom: none;
+}
 .dbutton, .d1button {
 	border-radius: 10px;
 }
